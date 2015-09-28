@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SciFi_Fighter_AK5-diffuse
+  m_Shader: {fileID: 4800000, guid: 367f518f9f79d8642931c26455a35585, type: 3}
+  m_ShaderKeywords: _COLORIFYMASKED _COLORIFYTWOCOLORS _NORMALMAP
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 23f6f60ee292af940b55e6ae7a3ba9dc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: f16a689c1d51c8048a612027d0abc7c2, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ColorifyMaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e8cfa46845dc56446afe253575e94dde, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: .515999973
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
+          name: _ColorifyMode
+        second: 0
+      data:
+        first:
+          name: _ColorifyColorsMode
+        second: 1
+      data:
+        first:
+          name: _ColorifyMultiplier
+        second: 1
+      data:
+        first:
+          name: _ColorifyMultiplier2
+        second: 1
+      data:
+        first:
+          name: _Range
+        second: .209999993
+      data:
+        first:
+          name: _HueRange
+        second: .899999976
+      data:
+        first:
+          name: _Range2
+        second: .00999999978
+      data:
+        first:
+          name: _HueRange2
+        second: .100000001
+      data:
+        first:
+          name: _ColorifySpecStrength
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Color
+        second: {r: .566176474, g: .566176474, b: .566176474, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .227941155, g: .227941155, b: .227941155, a: 1}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _PatCol
+        second: {r: .779411793, g: .474356353, b: 0, a: 1}
+      data:
+        first:
+          name: _NewColor
+        second: {r: .79411763, g: .0934255943, b: .0934255943, a: 1}
+      data:
+        first:
+          name: _NewSpecularColor
+        second: {r: .796081483, g: .0941222981, b: .0941222981, a: 0}
+      data:
+        first:
+          name: _PatCol2
+        second: {r: .329411775, g: .329411775, b: .356862754, a: 1}
+      data:
+        first:
+          name: _NewColor2
+        second: {r: .41911763, g: .303498954, b: 0, a: 1}
+      data:
+        first:
+          name: _NewSpecularColor2
+        second: {r: .419613898, g: .301966965, b: 0, a: .727999985}

@@ -1,0 +1,29 @@
+1.5:
+- Added Unity 5-compatible Toon shaders
+- Standard PBS shader:
+-- Added backface and cull-off versions
+-- Added luminosity recolor mode
+-- Added color multipliers
+-- Added specular recolor and smoothness control
+
+1.4:
+- Added Unity 5 standard shader variants
+- Fixed unlit shaders with negative scale
+
+1.3a:
+- fixed warning messages
+
+1.3:
+- Added in-editor mask baking
+- Added recolor mask family of shaders
+
+1.2:
+- Added Maskless dissolve shaders
+
+1.1:
+- Added Toon outline shaders
+- Added Unlit shaders for sprite rendering (transparent, cutout and simple)
+
+1.0b:
+- unified the way main color is handled by different shader families
+- small manual updates.
