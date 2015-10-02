@@ -9,11 +9,7 @@ public class CreateAccount : MonoBehaviour {
 	public InputField rePassword;
 
 	private string _website = "http://koenvandervelden.com/onlineGame/PHP/CreateAccount.php?user=";
-	
-	void Update()
-	{
-		Debug.Log(password.text);
-	}
+
 	public void create () 
 	{
 		if(password.text != rePassword.text)

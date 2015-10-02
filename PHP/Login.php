@@ -6,7 +6,7 @@
     
     $PlayerId;
     
-    $query = "SELECT id FROM Users WHERE Username = '$userName' AND Pass = '$pass'";
+    $query = "SELECT id FROM Users WHERE Username = '$userName' AND Pass = md5('$pass')";
     
     $result = mysqli_query($conn, $query)
     or die('Error: Could not connect to the database');
