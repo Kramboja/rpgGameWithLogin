@@ -22,12 +22,21 @@ public class CreateAccount : MonoBehaviour {
 
 		if(password.text != rePassword.text)
 		{
-			Debug.Log("Passwords are not the same");
+			text.text = "Passwords are not the same";
+			activateButton();
 			return;
 		}
-		if(password == null)
+		if(password.text == "")
 		{
-			Debug.Log("no password found");
+			text.text = "no password found";
+			activateButton();
+			return;
+		}
+
+		if(username.text == "")
+		{
+			text.text = "no username found";
+			activateButton();
 			return;
 		}
 
@@ -42,11 +51,16 @@ public class CreateAccount : MonoBehaviour {
 		if (www.error == null)
 		{
 			text.text = "account created succesfully! \n press OK to go to the login screen.";
-			okButton.interactable = true;
-			Debug.Log("Account created succesfully");
+			activateButton();
 		} else {
 			Debug.Log("Username might already excist");
+			activateButton();
 		}
+	}
+
+	private void activateButton()
+	{
+		okButton.interactable = true;
 	}
 
 	private void openPopup()

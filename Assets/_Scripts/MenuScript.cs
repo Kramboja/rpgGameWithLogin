@@ -8,10 +8,13 @@ public class MenuScript : MonoBehaviour {
 	public GameObject registerUser;
 	public GameObject popUp;
 
+
 	void Awake()
 	{
 		mainMenu();
 	}
+
+	//----------------------------------------------------------
 
 	public void playAsGuest()
 	{
@@ -36,11 +39,13 @@ public class MenuScript : MonoBehaviour {
 		GetComponent<CreateAccount>().create();
 	}
 
+	//----------------------------------------------------------
 	public void loadingScreen()
 	{
 
 	}
 
+	//----------------------------------------------------------
 	public void Options()
 	{
 		//open the options screen here
