@@ -8,10 +8,18 @@ public class CreateAccount : MonoBehaviour {
 	public InputField password;
 	public InputField rePassword;
 
+	public GameObject popUp;
+	public Text text;
+
+	public Button okButton;
+
 	private string _website = "http://koenvandervelden.com/onlineGame/PHP/CreateAccount.php?user=";
 
 	public void create () 
 	{
+		openPopup();
+		text.text = "Creating account...";
+
 		if(password.text != rePassword.text)
 		{
 			Debug.Log("Passwords are not the same");
@@ -33,9 +41,17 @@ public class CreateAccount : MonoBehaviour {
 		// check for errors
 		if (www.error == null)
 		{
+			text.text = "account created succesfully! \n press OK to go to the login screen.";
+			okButton.interactable = true;
 			Debug.Log("Account created succesfully");
 		} else {
 			Debug.Log("Username might already excist");
 		}
+	}
+
+	private void openPopup()
+	{
+		popUp.SetActive(true);
+
 	}
 }

@@ -6,6 +6,7 @@ public class MenuScript : MonoBehaviour {
 	public GameObject gameMainMenu;
 	public GameObject options;
 	public GameObject registerUser;
+	public GameObject popUp;
 
 	void Awake()
 	{
@@ -29,7 +30,7 @@ public class MenuScript : MonoBehaviour {
 		gameMainMenu.SetActive(false);
 		registerUser.SetActive(true);
 	}
-
+	
 	public void createAccount()
 	{
 		GetComponent<CreateAccount>().create();
@@ -47,8 +48,15 @@ public class MenuScript : MonoBehaviour {
 
 	public void mainMenu()
 	{
-		gameMainMenu.SetActive(true);
+		//play animation close
 //		options.SetActive(false);
 		registerUser.SetActive(false);
+		gameMainMenu.SetActive(true);
+		//play animation open
+	}
+
+	public void popUpOff()
+	{
+		popUp.SetActive(false);
 	}
 }
