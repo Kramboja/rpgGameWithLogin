@@ -53,11 +53,9 @@ public class MenuScript : MonoBehaviour {
 
 	public void mainMenu()
 	{
-		//play animation close
 //		options.SetActive(false);
 		registerUser.SetActive(false);
 		gameMainMenu.SetActive(true);
-		//play animation open
 	}
 
 	public void popUpOff()

@@ -22,6 +22,7 @@
         
         while ($row = mysqli_fetch_array($result))
         {
+            echo $row['Username'] . "<br>";
             echo $row['hp'] . "<br>";
             echo $row['level'] . "<br>";
             echo $row['xp'] . "<br>";

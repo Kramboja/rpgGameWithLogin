@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class LoginScript : MonoBehaviour {
 
-	public InputField username;
+	public InputField Username;
 	public InputField password;
 
 	private string _website = "http://koenvandervelden.com/onlineGame/PHP/Login.php?user=";
@@ -12,7 +12,7 @@ public class LoginScript : MonoBehaviour {
 	public GameObject popUp;
 	public Text text;
 	public Button okButton;
-
+	
 	public void login () 
 	{
 		openPopup();
@@ -25,7 +25,7 @@ public class LoginScript : MonoBehaviour {
 			return;
 		}
 		
-		string url = "" + _website + username.text.ToString() + "&pass=" + password.text.ToString();
+		string url = "" + _website + Username.text.ToString() + "&pass=" + password.text.ToString();
 		WWW www = new WWW(url);
 		StartCoroutine(WaitForRequest(www));
 	}
@@ -35,7 +35,7 @@ public class LoginScript : MonoBehaviour {
 		// check for errors
 		if (www.error == null && www.text != "")
 		{
-			Debug.Log(www.text);
+			globals.setupUserData(www.text);
 
 			text.text = "logged in succesfully! \n press OK to play the game";
 			okButton.interactable = true;
