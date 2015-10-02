@@ -21,7 +21,7 @@ public class MenuScript : MonoBehaviour {
 	public void login()
 	{
 		loadingScreen();
-		//login function comes here
+		GetComponent<LoginScript>().login();
 	}
 
 	public void register()
