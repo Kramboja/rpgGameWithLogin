@@ -19,7 +19,7 @@ public class MenuScript : MonoBehaviour {
 	public void playAsGuest()
 	{
 		loadingScreen();
-		//load level with all data set to 0
+		//Start game here...
 	}
 
 	public void login()
@@ -48,12 +48,14 @@ public class MenuScript : MonoBehaviour {
 	//----------------------------------------------------------
 	public void Options()
 	{
-		//open the options screen here
+		gameMainMenu.SetActive (false);
+		options.SetActive(true);
+		//Sound, show xp, show hp, quit game, OK btn, mouse sensivity
 	}
 
 	public void mainMenu()
 	{
-//		options.SetActive(false);
+		options.SetActive(false);
 		registerUser.SetActive(false);
 		gameMainMenu.SetActive(true);
 	}
