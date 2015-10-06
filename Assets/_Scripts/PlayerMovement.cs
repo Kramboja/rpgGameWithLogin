@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	private float speed 			= 100.0f;
+	private float speed 			= 5.0f;
 	private float rotationspeed 	= 100f;
 	private float mouseSensivity 	= 10f;
 	private float verticalRotation 	= 0;
