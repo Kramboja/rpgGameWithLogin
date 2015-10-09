@@ -19,6 +19,7 @@ public class MenuScript : MonoBehaviour {
 	public void playAsGuest()
 	{
 		loadingScreen();
+		Application.LoadLevel("Game");
 		//Start game here...
 	}
 
@@ -26,6 +27,7 @@ public class MenuScript : MonoBehaviour {
 	{
 		loadingScreen();
 		GetComponent<LoginScript>().login();
+		Application.LoadLevel("Game");
 	}
 
 	public void register()
