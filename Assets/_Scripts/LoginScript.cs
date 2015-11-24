@@ -21,8 +21,8 @@ public class LoginScript : MonoBehaviour {
 
 		if(password == null)
 		{
-			Debug.Log("no password found");
 			return;
+			//return if no password has given
 		}
 		
 		string url = "" + _website + username.text.ToString() + "&pass=" + password.text.ToString();
@@ -35,15 +35,11 @@ public class LoginScript : MonoBehaviour {
 		// check for errors
 		if (www.error == null)
 		{
-			Debug.Log(www.text);
 			globals.setupUserData(www.text);
 
 			text.text = "logged in succesfully! \n press OK to play the game";
 			okButton.interactable = true;
-			// open new scene here? set vars here? -----------------------------------
 		} else {
-			Debug.Log("something went wrong");
-			Debug.Log(www.error);
 			text.text = "Your username and password doesn't match.\n press OK to try again\n";
 			okButton.interactable = true;
 		}
