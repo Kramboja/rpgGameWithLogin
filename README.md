@@ -6,8 +6,8 @@ This projects it about a login system made in unity. This way it would be possib
 
 ### <a name="scripts"></a> Table of content
 
-### [Team Members](#scripts)
-### [Sample scripts](#team-members)
+### [Team Members](#team-members)
+### [Sample scripts](#scripts)
 
 ---
 
